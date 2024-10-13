@@ -1,4 +1,4 @@
-name: Deno
+name: build
 
 on:
   push:
@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Setup repo
@@ -23,3 +23,5 @@ jobs:
         run: deno run check:lint
       - name: Check type
         run: deno run check:type
+      - name: Build
+        run: deno run build
