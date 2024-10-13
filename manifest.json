@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "remove-gmail-ad",
+  "version": "0.0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://mail.google.com/mail/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
