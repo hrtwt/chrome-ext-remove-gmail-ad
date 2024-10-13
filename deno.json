@@ -1,6 +1,7 @@
 {
   "tasks": {
-    "build": "deno run build.ts"
+    "build": "deno run build.ts",
+    "check": "deno fmt --check && deno lint"
   },
   "imports": {
     "@std/path": "jsr:@std/path@^1.0.6",
