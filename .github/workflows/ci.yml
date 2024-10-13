@@ -19,5 +19,7 @@ jobs:
         uses: denoland/setup-deno@v2
         with:
           deno-version: v2.x
-      - name: Run linter
-        run: deno run check
+      - name: Check lint
+        run: deno run check:lint
+      - name: Check type
+        run: deno run check:type
