@@ -4,7 +4,7 @@ import { resolve } from "@std/path";
 
 await esbuild.build({
   plugins: [...denoPlugins()],
-  entryPoints: ["content.ts"],
+  entryPoints: ["src/content.ts"],
   bundle: true,
   outdir: resolve("dist"),
   minify: true,
